@@ -15,7 +15,9 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 
 ## algorithm
 
-- map codes to half bytes
+The algorithm is made of two succesive operations :
+
+###  UID codes mapping to half bytes
 
 | half byte | code |
 |---|---|
@@ -38,7 +40,9 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 
 half bytes 0x0, 0x1, 0x4, 0x6, 0x8 shrink two or more codes. "1.2.840.10008." is the root of all DICOM OID.
 
-- 6 half bytes, that is four bytes, are processed together in a base 64 like transformation which outputs 4 url-safe ascii chars
+### base 64 like dump of groups of 6 half bytes
+
+6 half bytes, that is four bytes, are processed together in a base 64 like transformation which outputs 4 url-safe ascii chars
 
   base 64 table:
 
