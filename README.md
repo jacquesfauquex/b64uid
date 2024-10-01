@@ -17,6 +17,20 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 
 - map codes to half bytes
 
-|---|---|
 | half byte | code |
-|---|---|
+| 0x0 | 1.2.840.10008. |
+| 0x1 | . |
+| 0x2 | 0. |
+| 0x3 | 0 |
+| 0x4 | 1. |
+| 0x5 | 1 |
+| 0x6 | 2. |
+| 0x7 | 2 |
+| 0x8 | 3. |
+| 0x9 | 3 |
+| 0xA | 4 |
+| 0xB | 5 |
+| 0xC | 6 |
+| 0xD | 7 |
+| 0xE | 8 |
+| 0xF | 9 |
