@@ -42,7 +42,7 @@ half bytes 0x0, 0x1, 0x4, 0x6, 0x8 shrink two or more codes. "1.2.840.10008." is
 
   base 64 table:
 
-  ```
+```
 -, 0, 1, 2, 3, 4, 5, 6, 7, 8,
 9, A, B, C, D, E, F, G, H, I,
 J, K, L, M, N, O, P, Q, R, S,
@@ -50,6 +50,10 @@ T, U, V, W, X, Y, Z, _, a, b,
 c, d, e, f, g, h, i, j, k, l,
 m, n, o, p, q, r, s, t, u, v,
 w, x, y, z
-  ```
+```
 
-The length of the result is always a multiple of 4
+The length of the result is always a multiple of 4 chars.
+
+## side notes
+
+The same algorithm may be applied very efficiently to dates written aammdd (without century)
