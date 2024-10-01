@@ -18,8 +18,6 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 - bash 5 ( use: stdin | b64uid | stdout )
    - b64uid.sh
    - uidb64.sh
-- rust
-   - ...
 
 
 ## algorithm
