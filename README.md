@@ -35,3 +35,21 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 | 0xD | 7 |
 | 0xE | 8 |
 | 0xF | 9 |
+
+half bytes 0x0, 0x1, 0x4, 0x6, 0x8 shrink two or more codes. "1.2.840.10008." is the root of all DICOM OID.
+
+- 6 half bytes, that is four bytes, are processed together in a base 64 like transformation which outputs 4 url-safe ascii chars
+
+  base 64 table:
+
+  ```
+-, 0, 1, 2, 3, 4, 5, 6, 7, 8,
+9, A, B, C, D, E, F, G, H, I,
+J, K, L, M, N, O, P, Q, R, S,
+T, U, V, W, X, Y, Z, _, a, b,
+c, d, e, f, g, h, i, j, k, l,
+m, n, o, p, q, r, s, t, u, v,
+w, x, y, z
+  ```
+
+The length of the result is always a multiple of 4
