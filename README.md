@@ -13,6 +13,15 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 - the sorting of OIDs before and after shrinkage is unchanged
 - the algorithm to shrink and expand should be simple and without dependencies to extern libraries
 
+## contents of the repository
+
+- bash 5 ( use: stdin | b64uid | stdout )
+   - b64uid.sh
+   - uidb64.sh
+- rust
+   - ...
+
+
 ## algorithm
 
 The algorithm is made of two succesive operations :
