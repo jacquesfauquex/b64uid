@@ -16,6 +16,7 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 ## algorithm
 
 - map codes to half bytes
-+-+-+
+
+|---|---|
 | half byte | code |
-+-+-+
+|---|---|
