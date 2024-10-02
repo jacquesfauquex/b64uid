@@ -22,7 +22,7 @@ b64uid aims at shrinking them, but cleverly. In particular, it complies with the
 
 ## algorithm
 
-The algorithm is made of two succesive operations :
+The algorithm is made of two operations :
 
 ###  UID codes mapping to half bytes
 
@@ -47,11 +47,10 @@ The algorithm is made of two succesive operations :
 
 half bytes 0x0, 0x1, 0x4, 0x6, 0x8 shrink two or more codes. "1.2.840.10008." is the root of all DICOM OID.
 
+
 ### base 64 like dump of groups of 6 half bytes
 
-6 half bytes, that is four bytes, are processed together in a base 64 like transformation which outputs 4 url-safe ascii chars
-
-  base 64 table:
+3 half bytes are processed together to output 2 6-bit chars from the base 64 table below:
 
 ```
 -, 0, 1, 2, 3, 4, 5, 6, 7, 8,
@@ -63,8 +62,9 @@ m, n, o, p, q, r, s, t, u, v,
 w, x, y, z
 ```
 
-The length of the result is always a multiple of 4 chars.
+The length of the result of the shrinkeage is always a multiple of 2 chars.
+
 
 ## side notes
 
-The same algorithm may be applied very efficiently to dates written aammdd (without century)
+The same algorithm may be applied to dates written aammdd (without century), outputing a four chars string.
