@@ -63,8 +63,3 @@ w, x, y, z
 ```
 
 The length of the result of the shrinkeage is always a multiple of 2 chars.
-
-
-## side notes
-
-The same algorithm may be applied to dates written aammdd (without century), outputing a four chars string.
